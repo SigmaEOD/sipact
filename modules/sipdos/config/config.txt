@@ -1,0 +1,42 @@
+# SIP DoS Configuration File
+# Format: key::value
+
+# Target Configuration
+# Target IP address (single IP, not range)
+ip::192.168.50.125
+# Target port number (default SIP port is 5060)
+port::5060
+# Protocol to use (UDP or TCP)
+proto::UDP
+
+# Attack Configuration
+# Type of SIP packet to send (INVITE, REGISTER, OPTIONS, etc.)
+packet_type::INVITE
+# Source user number/name in SIP URI
+from_user::1000
+# Destination user number/name in SIP URI
+to_user::2000
+# Source IP address (use 'random' for random public IPs)
+from_ip::random
+# Number of concurrent attack threads
+num_threads::10
+# Attack duration in seconds (0 for unlimited)
+attack_duration::0
+# Enable/disable multi-threading
+use_threading::true
+
+# SIP Configuration
+# CSeq format (method+sequence, random, or custom)
+cseq::method+sequence
+# Custom CSeq value (if cseq is set to 'custom')
+custom_cseq::
+# Custom Call-ID (leave empty for random)
+call_id::
+# Custom X-Header to add to SIP messages
+x_header::
+# Path to custom payload file (leave empty for random payload)
+payload_file::
+
+# Output Configuration
+# Verbosity level (0=minimal, 1=normal, 2=detailed)
+verbose::0

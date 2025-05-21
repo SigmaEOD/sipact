@@ -1,0 +1,16 @@
+# SIP Sniffer Configuration
+
+# Target IP address for MITM
+target_ip::192.168.50.195
+
+# Gateway IP address
+gateway_ip::192.168.50.1
+
+# Network interface to use
+interface::eth0
+
+# Enable MITM mode (true/false)
+mitm_mode::true
+
+# Verbose level (0-2)
+verbose::0
