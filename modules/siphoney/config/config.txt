@@ -1,0 +1,34 @@
+# SIP Honeypot Configuration File
+# Format: key::value
+
+# Server Configuration
+# IP address to bind to (0.0.0.0 for all interfaces, or specific IP)
+bind_address::0.0.0.0
+# Port to listen on
+port::5060
+
+# Security Configuration
+# Maximum message size in bytes
+max_message_size::4096
+# Maximum number of concurrent threads
+max_threads::100
+# Maximum number of log entries to keep
+max_log_entries::10000
+# Rate limit window in seconds
+rate_limit_window::60
+# Maximum requests per rate limit window
+max_requests_per_window::100
+
+# Logging Configuration
+# Log file path
+log_file::sip_honeypot.log
+# Log level (DEBUG, INFO, WARNING, ERROR, CRITICAL)
+log_level::DEBUG
+
+# Attack Pattern Configuration
+# Brute force patterns (comma-separated)
+brute_force_patterns::auth,digest,md5,password
+# Scanning patterns (comma-separated)
+scanning_patterns::scan,probe,detect
+# Exploit patterns (comma-separated)
+exploit_patterns::exploit,vulnerability,attack

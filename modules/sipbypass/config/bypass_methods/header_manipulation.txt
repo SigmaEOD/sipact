@@ -1,0 +1,43 @@
+# Header Manipulation Tests Configuration
+# Format: key::value
+
+# Basic Auth Tests
+basic_auth::true
+basic_auth_long::true
+
+# Digest Auth Tests
+digest_auth::true
+digest_auth_partial::true
+
+# IP Spoofing Tests
+ip_spoofing::true
+x_real_ip::true
+
+# Via Header Tests
+via_header::true
+via_ipv6::true
+
+# Contact Header Tests
+contact_header::true
+contact_localhost::true
+contact_ipv6::true
+
+# Call-ID Tests
+call_id_zero::true
+call_id_null::true
+call_id_admin::true
+
+# CSeq Tests
+cseq_zero::true
+cseq_large::true
+cseq_method::true
+
+# User-Agent Tests
+user_agent_empty::true
+user_agent_asterisk::true
+user_agent_freeswitch::true
+
+# Custom Header Tests
+custom_sip_auth::true
+custom_sip_user::true
+custom_sip_pass::true 

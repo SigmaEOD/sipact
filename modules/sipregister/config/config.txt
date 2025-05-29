@@ -1,0 +1,38 @@
+# SIP Registration Scanner Configuration File
+# Format: key::value
+
+# Target Configuration
+# Target IP address (REQUIRED)
+target_ip::192.168.50.195
+# Target port number (default SIP port is 5060)
+port::5060
+
+# Authentication Configuration
+# Username wordlist path (REQUIRED)
+username_wordlist::/home/sigma/Desktop/sipact/wordlists/usernames.txt
+# Password wordlist path (REQUIRED)
+password_wordlist::/home/sigma/Desktop/sipact/wordlists/passwords.txt
+
+# Threading Configuration
+# Number of concurrent threads (higher = faster but more resource intensive)
+threads::20
+# Enable/disable multi-threading
+use_threading::true
+# Batch size for threading (number of attempts per batch)
+batch_size::50
+
+# Scanner Configuration
+# Verbosity level (0=minimal, 1=normal, 2=detailed)
+verbose::1
+# Timeout for each attempt in seconds
+timeout::2
+
+# SIP Message Configuration
+# From user in SIP URI
+from_user::2000
+# To user in SIP URI
+to_user::1000
+# Source IP (leave empty to use local IP)
+from_ip::
+# User-Agent string
+user_agent::Theta/1.0

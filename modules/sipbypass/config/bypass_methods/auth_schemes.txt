@@ -1,0 +1,16 @@
+# Authentication Schemes Tests Configuration
+# Format: key::value
+
+# Standard Schemes
+basic::true
+digest::true
+bearer::true
+ntlm::true
+negotiate::true
+
+# Additional Schemes
+oauth::true
+aws4::true
+custom::true
+none::true
+empty::true

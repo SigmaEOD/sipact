@@ -1,0 +1,27 @@
+# Digest Authentication Tests Configuration
+# Format: key::value
+
+# Empty Digest Tests
+empty_digest::true
+
+# Algorithm Tests
+algorithm_md5::true
+algorithm_sha256::true
+algorithm_sha512::true
+
+# QoP Tests
+qop_auth::true
+qop_auth_int::true
+
+# CNonce Tests
+cnonce_test::true
+
+# Opaque Tests
+opaque_test::true
+
+# Response Tests
+response_zero::true
+
+# URI Tests
+uri_localhost::true
+uri_ipv6::true

@@ -1,0 +1,22 @@
+# Session Hijacking Tests Configuration
+# Format: key::value
+
+# Session ID Tests
+session_id::true
+session_id_zero::true
+
+# Cookie Tests
+cookie_session::true
+cookie_sip_session::true
+
+# Custom Session Tests
+x_session_id::true
+x_auth_token::true
+
+# Call-ID Session Tests
+call_id_session::true
+call_id_localhost::true
+
+# Tag Tests
+from_tag::true
+to_tag::true 
